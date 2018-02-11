@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<!-- flex -->
+  <div class="wrapper">
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">информация</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">фото и видео</a>
+          </li>
+          
+          <li class="menu__item">
+            <a href="#" class="menu__link">карта штата</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="header__logo">
+        <img src="" alt="" class="header__logo-img">
+      </a>
+    </header>
+    <section class="intro intro--index" style="background-image: url();">
+      <img src="" alt="image" class="intro__image">
+    </section>
+    <section class="market">
+      <div class="market__header">
+        <h2 class="market__title">седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </div>
+
+      <div class="market__row market__row--blue">
+        <div class="market__item">
+          <div class="market__item-title">настоящий городок</div>
+          <div class="market__item-number">№1</div>
+          <div class="market__item-description">седона - не аттракцион для туристов, там течет своя жизнь</div>
+        </div>
+        <div class="market__item market__item--img">
+        </div>
+      </div>
+      <div class="market__row">
+        <div class="market__item market__item--home market__item--icon">
+          <div class="market__item-title">жилье</div>
+          <div class="market__item-description">рекомендуем пожить в настоящем отеле, все как в кино!</div>
+        </div>
+        <div class="market__item market__item--food market__item--icon">
+          <div class="market__item-title">еда</div>
+          <div class="market__item-description">всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
+        </div>
+        <div class="market__item market__item--suvenirs market__item--icon">
+          <div class="market__item-title">сувениры</div>
+          <div class="market__item-description">не только китайского, но и местного производства!</div>
+        </div>
+      </div>
+      <div class="market__row market__row--blue">
+        <div class="market__item market__item--img">
+        </div>
+        <div class="market__item">
+          <div class="market__item-title">там есть мост дьявола</div>
+          <div class="market__item-number">№2</div>
+          <div class="market__item-description">да, по нему можно пройти! если конечно вы осмелитесь</div>
+        </div>
+      </div>
+
+      <div class="market__row market__row--grey">
+        <div class="market__item">
+          <div class="market__item-title">небольшая площадь</div>
+          <div class="market__item-number">№3</div>
+          <div class="market__item-description">все достопримечательности находятся очень близко</div>
+        </div>
+        <div class="market__item">
+          <div class="market__item-title">красивая дорога</div>
+          <div class="market__item-number">№4</div>
+          <div class="market__item-description">ехать в седону из лас-вегаса совсем не скучно!</div>
+        </div>
+        <div class="market__item">
+          <div class="market__item-title">мало туристов</div>
+          <div class="market__item-number">№5</div>
+          <div class="market__item-description">большинство едет в гранд каньон и толпится там!</div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order__header">
+          <h2 class="order__title">заинтересовались</h2>
+          <p>укажите предолагаемые даты поездки, и мы покажем вам лучшие предложениягостиниц в седоне</p>
+          <a href="#" class="order__btn btn btn__broun js-order-form-open">
+            поиск гостиницы в седоне
+          </a>
+
+          <form method="/" action="/" class="order__form js-order-form">
+          <div class="order__form-row">
+            <label for="start" class="order__form-label">дата заезда</label>
+            <input id="start" class="order__input-label type="text" name="start" placeholder="дата">
+          </div>
+          <div class="order__form-row">
+            <label for="finish" class="order__form-label">дата выезда</label>
+            <input class="order__input-label" id="finish" type="text" name="finish" placeholder="дата">
+          </div> 
+          <div class="order__form-row order__row--count">
+            <div class="order__adult">
+              <label for="adult" class="order__form-label">взрослые</label>
+              <button type="button" class="btn button-count">
+                +
+              </button>
+              <input class="order__input-label" id="adult" type="text" name="adult" value="1">
+              <button type="button" class="btn button-count">
+                -
+              </button>
+            </div> 
+            <div class="order__input__adult">
+              <label for="child" class="order__form-label">дети</label>
+              <button type="button" class="btn button-count">
+                +
+              </button>
+              <input class="order__input-label" id="child" type="text" name="child" value="1">
+              <button type="button" class="btn button-count">
+                -
+              </button>
+            </div>   
+          </div>
+          <button class="btn order-form__btn" type="submit">найти</button>
+          </form>
+      </div>
+    </section>
+    <section class="map">
+      <iframe class="map__iframe" width="100%" height="450" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/view?zoom=12&center=34.8697,-111.7610&key=AIzaSyAFYkZXadKgxx_eXb-RnX3wK_o-PAncY68" allowfullscreen>
+        <footer class="footer">
+          <a href="#" class="footer__link">#visitsedona</a>
+          <div class="footer__social">
+            <a href="#" class="footer__social-item btn btn__social-item">
+              twetter
+            </a>
+            <a href="#" class="footer__social-item btn btn__social-item">
+              facebook
+            </a>
+            <a href="#" class="footer__social-item btn btn__social-item">
+              youtube
+            </a>
+          </div>
+          <div class="footer__copyrite">
+            <p>website by</p>
+            <img src="" alt="" class="footer__copyrite-img">
+          </div>
+        </footer>
+      </iframe>
+    </section>
+    
+  </div>
+</body>
+</html>
